@@ -1,0 +1,594 @@
+:root{
+    --blue : 		#4B0082;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+::selection {
+    background-color: var(--blue);
+    color: #eee;
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+}
+.pp{
+    background-image: url(../img/blob.svg);
+    width: 700px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.pp img{
+    width: 200px;
+    overflow: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+    overflow-x: hidden ;
+}
+
+body{
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .2rem solid rgb(54, 62, 72);
+    color: #2F4F4F;
+
+}
+
+.heading span{
+    color: #4b0082;
+}
+
+.about{
+    color: #3c5c5c;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: 	#F0F8FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 2px 1px 4px #c0ddf7;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem 1rem;
+}
+.btn{
+    padding: .7rem 3rem;
+    background-color: #4B0082;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    color: #ddd;
+    outline: none;
+    border: none;
+    
+}
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: skyblue;
+    color: #2F4F4F;
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid indigo ;
+}
+
+header .user .name{
+    font-size: 2.5rem;
+    color: 	#2F4F4F;
+}
+
+header .user .post{
+    font-size: 1.5rem;
+    color: #3c5c5c;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+
+}
+
+header .navbar ul a{
+    display: block;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: #4B0082;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul a:hover{
+    background-color: skyblue;
+    color: #2F4F4F;
+}
+
+#menu{
+    text-align: center;
+    line-height: 3.5rem;
+    position: fixed;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: indigo;
+    top: 2rem;
+    right: 2rem ;
+    color:  #ddd;
+    cursor : pointer;
+    font-size: 2rem;
+    
+    z-index: 1000;
+    border-radius: 1rem;
+    display: none;
+
+}
+
+
+.home{
+    display : flex;
+    justify-content: center;
+   
+    flex-direction: column;
+    padding: 0 15rem;
+    opacity: 0;
+    transition: 1.5s;
+    transform: translateX(100px);
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.home h3{
+    font-size: 2.5rem;
+    color: #4B0082;
+}
+
+.home p{
+    font-size: 1.5rem;
+    color: #243232;
+    padding : 1rem 0 ;
+}
+.home h1{
+    font-size: 2rem;
+    color: #4B0082;
+    padding : 1rem 0 ;
+}
+
+.home h1 span{
+    color: #2F4F4F;
+ 
+}
+.svg{
+    width: 400px;
+    display: none;
+    
+}
+.svg.remove{
+    opacity: 0;
+
+}
+.homeblob{
+ height: 190px;
+ width: 190px;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+ 
+}
+
+.about .row .info{
+    flex: 1;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: 1s;
+    
+}
+.about .row .info.show{
+    opacity: 1;
+    transform: translate(0);
+}
+.about .row .info h3{
+    font-size: 1.5rem;
+    color: indigo;
+    padding: .5rem 0;
+    font-weight: 400;
+}
+
+.about .row .info h3 span{
+    color: #2F4F4F;
+    padding: .5rem;
+}
+
+.about .row .counter{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 6rem;
+}
+
+
+.about .row .counter .box{
+    width: 20rem;
+    background: indigo;
+    color: #ddd;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 10px;
+    transition: .3s;
+    opacity: 0;
+    position: relative;
+    bottom: -200px;
+  
+    transition: 1s;
+}
+.about .row .counter .box.show{
+    opacity: 1;
+    transform: translateY(-200px);
+}
+
+.about .row .counter .box:hover{
+    background-color: rgb(39, 4, 65);
+}
+
+.about .row .counter .box span{
+    font-size: 4rem;
+    color: #919191;
+}
+.about .row .counter .box h3{
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    flex-wrap: wrap;
+}
+
+.education .box-container .box{
+    width: 22rem;
+    margin: 4rem 1rem;
+    padding-left: 3rem ;
+    border-left: .2rem solid #2F4F4F;
+    position: relative;
+    bottom: -200px;
+    transition: 1s;
+    opacity: 0;
+
+}
+
+.education .box-container .box.show{
+    opacity: 1;
+    transform: translateY(-200px);
+}
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background-color: indigo;
+    color: #ddd;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+   
+
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: #2F4F4F;
+    padding-top: 1.5rem;
+
+}
+.education .box-container .box p{
+    font-size: 1.1rem;
+    color: #1d2424;
+    padding-top: 1.5rem;
+
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #ddd;
+    background-color: #4b0082;
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+
+.portfolio .box-container .box{
+    height: 18rem;
+    width: 34rem;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+}
+.portfolio .box-container .box.left{
+    transform: translateX(-200px);
+}
+.portfolio .box-container .box.right{
+    transform: translateX(200px);
+}
+.portfolio .box-container .box.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.portfolio .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio .box-container .box img:hover{
+    transform: scale(1.2);
+}
+
+.contact  .row{
+    display: flex;
+   flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row form{
+    flex: 1;
+    padding: 2rem;
+    margin: 1rem;
+    margin-bottom: 4rem ;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    margin: 1rem 0;
+   background: #F0F8FF;
+   border: 1px solid #3c5c5c;
+    color: #243232;
+    width: 100%;
+    border-radius: 5px;
+}
+.contact .row form .message{
+    border-radius: 5px;
+    height: 15rem;
+    border: 1px solid #3c5c5c;
+    resize: none;
+    background-color: #F0F8FF;
+    padding: 1rem;
+}
+
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.contact .row form .btn{
+    width: 20%;
+    padding: 1rem 0;
+}
+.contact .row .content {
+    flex: 1;
+    margin: 0 2rem;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: 1s;
+}
+.contact .row .content.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: indigo;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.contact .row .content .info{
+    display: flex;
+   flex-direction: column;
+    font-size: 1.5rem;
+    color: #243232;
+    padding: .5rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+    color: indigo;
+    padding-right: 1rem;
+}
+.form{
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(200px);
+}
+.form.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.email{
+    text-transform: lowercase;
+}
+footer{
+    padding: 20px ;
+}
+
+footer .box{
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+  
+}
+footer .box a i {
+    font-size: 30px;
+    margin: 10px;
+}
+/* media query */
+
+@media(max-width : 1200px){
+   html{
+       font-size: 65%;
+   }
+   .home{
+       padding: 1rem 4rem;
+   }
+   .about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    flex-direction: column;
+ 
+}
+    .about .row .info {
+        padding-left: 0;
+    }
+    .about .row .counter{
+        padding-right: 0;
+    }
+}
+
+@media(max-width : 991px){
+    header{
+        left: -120%;
+        
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        
+        left: 0;
+    }
+    body{
+        padding: 0;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+    .portfolio .box-container .box{
+        width: 60%;
+    }
+    .svg{
+        display: block;
+        transition: .3s;
+    }
+
+}
+
+@media(max-width : 768px){
+    html{
+        font-size: 65%;
+    }
+    .portfolio .box-container .box{
+        width: 60%;
+    }
+    .about .row .counter .box{
+        width: 80%;
+        background: indigo;
+        color: #ddd;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 10px;
+    }
+    .about .row .info{
+        flex: 1;
+        padding: 2rem 0rem;
+        
+    }
+    .contact .row .content {
+        margin: 2rem 2rem;
+    }
+    
+}
+
+@media(max-width : 400px){
+    header{
+        width: 100vw;
+    }
+    .about .row .counter .box{
+        width: 80%;
+        margin: 1.5rem 0;
+    }
+    .portfolio .box-container .box{
+        width: 90%;
+    }
+    .contact .row form{
+        margin: 3rem 0;
+    }
+  
+}
