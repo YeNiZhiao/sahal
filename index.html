@@ -10,11 +10,13 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="fonts/fontawesome-free/css/all.min.css">
     <!-- My CSS -->
+    <link rel="stylesheet" href="css/loading.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/ldbtn.min.css">
 </body>
     <!-- header start -->
         <header>
@@ -26,24 +28,23 @@
 
             <nav class="navbar">
                 <ul>
-                    <li><a class="page-scroll" href="#home">Home</a></li>
+                    <li><a class="page-scroll" href="#home"><i class="fas fa-home"></i> Home</a></li>
                     <li>
-                        <a class="page-scroll" href="#about">About Me</a>
+                        <a class="page-scroll" href="#about"><i class="fas fa-user"></i> About Me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#education">
+                        <a class="page-scroll" href="#education"><i class="fas fa-graduation-cap"></i> 
                             Education
                         </a>
                     </li>
-                    <li><a class="page-scroll" href="#portfolio">  Portfolio</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="page-scroll" href="#portfolio"><i class="fas fa-images"></i> Portfolio</a></li>
+                    <li><a class="page-scroll" href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
                 </ul>
               
             </nav>
         </header>
     <!-- header end -->
 
-    <!-- home section -->
     <section class="home" id="home">
         <svg class="svg" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0" mask-type="alpha">
@@ -54,6 +55,7 @@
               <image class="homeblob" x=0" y="0" xlink:href="img/ok.png"></image>
             </g>
           </svg>
+    <!-- home section -->
        
         <h3>HI THERE</h3>
         <h1>I'M <span>Sahal Shamsul Falah</span></h1>
@@ -169,12 +171,29 @@
                     <h3><i class="fas fa-map-marker-alt"></i> Kaliung, Karangsari, Cimanggu</h3>
                 </div>
             </div>
-            <form class="form" action="">
-                <input type="text" placeholder="name" class="box">
-                <input type="text" placeholder="email" class="box">
-                <input type="text" placeholder="event" class="box">
-                <textarea class="message" aria-colspan="messsage" name="" id="" cols="30" rows="10" class="box-massage" placeholder="message"></textarea>
-                <button class="btn" type="submit">Send <i class=" fas fa-paper-plane"></i></button>
+            <form class="form" name="contact-form" action="">
+                <div id="success" class="d-none alert"><h5>Terimakasih! Pesan anda sudah kami terima. </h5><span class="close">X</span></div>
+                <input type="text" placeholder="name" name="nama" class="box">
+                <input type="text" name="email" placeholder="email" class="box">
+                <input name="event" type="text" placeholder="event" class="box">
+                <textarea name="pesan" class="message" aria-colspan="messsage" name="" id="" cols="30" rows="10" class="box-massage" placeholder="message" ></textarea>
+                <div class="button">
+                    <button class="btn-kirim btn" type="submit">Send <i class=" fas fa-paper-plane"></i></button>
+              
+                 
+                    <div class="btn loading d-none">        
+                        <div class="row">
+                            <div class="col-sm-2">
+                                 <div id="circle1"></div> 
+                                    <h5>Loading</h5>
+                            </div>
+                    </div>
+            
+                </div>
+              
+                <!-- include loading.css to use ld-ring and ld-spin -->
+                
+               
             </form>
         </div>
     </section>
@@ -201,4 +220,30 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <!-- my js -->
     <script src="js/script.js"></script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwvqNHOStJzCYjzCnZ1BKQVCQ5lcKfvKhU6mqrqq0z1HIPbLXBudtG0dUZaZoV_xBbMzA/exec';
+  const form = document.forms['contact-form'];
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.loading');
+  const alert = document.querySelector('.alert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => { 
+    // Ketika tombol submit diklik
+    // tampilkan tombol loading, hilangkan  tombol kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    //tampilkan alert
+    alert.classList.toggle('d-none');
+    // reset form
+
+    form.reset();
+    console.log('Success!', response)})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </html>
