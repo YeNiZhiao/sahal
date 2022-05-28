@@ -4,246 +4,621 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Portfolio</title>
+    <title>Web Portfolio #3</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- default css color -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <!-- style switcher -->
+    <link rel="stylesheet" href="css/color-1.css" class="alternate-style" title="color-1" disabled  >
+    <link rel="stylesheet" href="css/color-2.css" class="alternate-style" title="color-2" disabled >
+    <link rel="stylesheet" href="css/color-3.css" class="alternate-style" title="color-3" disabled  >
+    <link rel="stylesheet" type="text/css" href="css/color-4.css" class="alternate-style" title="color-4" >
+    <link rel="stylesheet" href="css/color-5.css" class="alternate-style" title="color-5"  >
+    <link rel="stylesheet" href="css/style-switcher.css">
+
 </head>
 <body>
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="fonts/fontawesome-free/css/all.min.css">
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/loading.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/ldbtn.min.css">
-</body>
+
+    <!-- preloader start -->
+    <div class="preloader">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end -->
     <!-- header start -->
-        <header>
-            <div class="user">
-                <img src="img/WhatsApp Image 2021-10-20 at 09.30.57.jpeg" alt="">
-                <h3 class="name">Sahal Shamsul Falah</h3>
-                <p class="post">Gamer</p>
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo">
+                    <a href="index.html">A</a>
+                </div>
+                <div class="hamburger-button outer-shadow hover-in-shadow">
+                    <span></span>
+                </div>
             </div>
-
-            <nav class="navbar">
-                <ul>
-                    <li><a class="page-scroll" href="#home"><i class="fas fa-home"></i> Home</a></li>
-                    <li>
-                        <a class="page-scroll" href="#about"><i class="fas fa-user"></i> About Me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#education"><i class="fas fa-graduation-cap"></i> 
-                            Education
-                        </a>
-                    </li>
-                    <li><a class="page-scroll" href="#portfolio"><i class="fas fa-images"></i> Portfolio</a></li>
-                    <li><a class="page-scroll" href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
-                </ul>
-              
-            </nav>
-        </header>
+        </div>
+    </header>
     <!-- header end -->
-
-    <section class="home" id="home">
-        <svg class="svg" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <mask id="mask0" mask-type="alpha">
-                <path fill="#4B0082" d="M60.9,-52C69.9,-37.4,61.8,-12.5,53.3,7.3C44.9,27.2,36.2,42.1,22.5,49.9C8.8,57.7,-9.8,58.4,-24.5,51.2C-39.1,44,-49.8,28.9,-55.6,10.6C-61.4,-7.6,-62.3,-29,-52.2,-44C-42.1,-58.9,-21.1,-67.4,2.5,-69.4C26,-71.3,52,-66.7,60.9,-52Z" transform="translate(100 100)" />
-            </mask>
-            <g mask="url(#mask0)">
-                <path fill="#4B0082" d="M60.9,-52C69.9,-37.4,61.8,-12.5,53.3,7.3C44.9,27.2,36.2,42.1,22.5,49.9C8.8,57.7,-9.8,58.4,-24.5,51.2C-39.1,44,-49.8,28.9,-55.6,10.6C-61.4,-7.6,-62.3,-29,-52.2,-44C-42.1,-58.9,-21.1,-67.4,2.5,-69.4C26,-71.3,52,-66.7,60.9,-52Z" transform="translate(100 100)" />
-              <image class="homeblob" x=0" y="0" xlink:href="img/ok.png"></image>
-            </g>
-          </svg>
-    <!-- home section -->
-       
-        <h3>HI THERE</h3>
-        <h1>I'M <span>Sahal Shamsul Falah</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, itaque assumenda sapiente veniam corporis maxime, rerum tenetur inventore iure possimus ipsa autem iusto maiores! Facere ex vel laudantium temporibus molestias!</p>
-        <a class="page-scroll" href="#about"><button class="btn">about <i class="fas fa-user"></i></button></a>
-    </section>
-
-
-    <!-- home section end -->
-    
-    <!-- about section start -->
-    <section class="about" id="about">
-        <h1 class="heading">
-            <span>about</span> me
-        </h1>
-        <div class="row">
-            <div class="info">
-                <h3><span>name : </span> Sahal Shamsul Falah </h3>
-                <h3><span>age : </span> 17 </h3>
-                <h3><span>Gender : </span> Male </h3>
-                <h3><span>post : </span> Gamer </h3>
-                <h3><span>language : </span> Sundanese </h3>
-                <a href="#"><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
-            </div>
-
-            <div class="counter">
-                <div class="box">
-                    <span>2+</span>
-                    <h3>years of experience</h3>
-                </div>
-                <div class="box">
-                    <span>5+</span>
-                    <h3>Competition</h3>
-                </div>
-                <div class="box">
-                    <span>3</span>
-                    <h3>Champion</h3>
-                </div>
-                <div class="box">
-                    <span>1</span>
-                    <h3>MVP</h3>
-                </div>
-            </div>
+    <!-- navigation menu start -->
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">
+            &times;
         </div>
-    </section>
-
-    <!-- about section end  -->
-
-    <!-- education section start -->
-    <section class="education" id="education">
-        <h1 class="heading">My  <span>Education</span></h1>
-        <div class="box-container">
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2016</span>
-            <h3>SD</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quam labore dolor fugiat, sunt voluptatum doloremque. Accusamus in rem magnam vel. Reprehenderit totam necessitatibus aliquam nemo ab repudiandae. Consectetur, laborum!</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2019</span>
-            <h3>SMP</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quam labore dolor fugiat, sunt voluptatum doloremque. Accusamus in rem magnam vel. Reprehenderit totam necessitatibus aliquam nemo ab repudiandae. Consectetur, laborum!</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2022</span>
-            <h3>SMK</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quam labore dolor fugiat, sunt voluptatum doloremque. Accusamus in rem magnam vel. Reprehenderit totam necessitatibus aliquam nemo ab repudiandae. Consectetur, laborum!</p>
-        </div>
-        </div>
-    </div>
-
-
-    </section>
-    <!-- education section end -->
-    
-    <!-- portfolio section start -->
-    <section class="portfolio" id="portfolio">
-        <h1 class="heading">My <span>Portfolio</span></h1>
-        <div class="box-container">
-            <div class="box left">
-                <img src="img/agen-z-granger-mobile-legends-ml-wallpaper-2560x1080_14.jpg" alt="">
-            </div>
-            <div class="box right">
-                <img src="img/cosmo-guard-ling-mobile-legends-ml-wallpaper-2560x1080_14.jpg" alt="">
-            </div>
-            <div class="box left">
-                <img src="img/floral-knight-lancelot-mobile-legends-ml-wallpaper-2560x1080_14.jpg" alt="">
-            </div>
-            <div class="box right">
-                <img src="img/kannagi-vale-mobile-legends-ml-wallpaper-2560x1080_14.jpg" alt="">
-            </div>
-            <div class="box left">
-                <img src="img/rainy-walk-starlight-kagura-mobile-legends-ml-wallpaper-2560x1080_14.jpg" alt="">
-            </div>
-            <div class="box right">
-                <img src="img/sumpah-kematian-benedetta-mobile-legends-ml-wallpaper-2560x1080_14.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- portfolio  section end -->
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <h1 class="heading"><span>Contact</span> Me</h1>
-        <div class="row">
-            <div class="content">
-                <h3 class="title">Contact Info</h3>
-                <div class="info">
-                    <h3 class="email"><i class="fas fa-envelope"></i> hal@gmail.com</h3>
-                    <h3><i class="fas fa-phone"></i> 0812623618xxx</h3>
-                    <h3><i class="fas fa-map-marker-alt"></i> Kaliung, Karangsari, Cimanggu</h3>
-                </div>
-            </div>
-            <form class="form" name="contact-form" action="">
-                <div id="success" class="d-none alert"><h5>Terimakasih! Pesan anda sudah kami terima. </h5><span class="close">X</span></div>
-                <input type="text" placeholder="name" name="nama" class="box">
-                <input type="text" name="email" placeholder="email" class="box">
-                <input name="event" type="text" placeholder="event" class="box">
-                <textarea name="pesan" class="message" aria-colspan="messsage" name="" id="" cols="30" rows="10" class="box-massage" placeholder="message" ></textarea>
-                <div class="button">
-                    <button class="btn-kirim btn" type="submit">Send <i class=" fas fa-paper-plane"></i></button>
-              
-                 
-                    <div class="btn loading d-none">        
-                        <div class="row">
-                            <div class="col-sm-2">
-                                 <div id="circle1"></div> 
-                                    <h5>Loading</h5>
-                            </div>
-                    </div>
-            
-                </div>
-              
-                <!-- include loading.css to use ld-ring and ld-spin -->
-                
+        <nav class="nav-menu-inner">
+            <ul>
+                <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
                
-            </form>
+              
+                <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
+              
+                <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a></li>
+              
+                <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
+              
+                
+                <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
+              
+            </ul>
+        </nav>
+        <!-- copyright text -->
+        <p class="copyright-text">
+            &copy; 2021 The Assalam
+        </p>
+        <div class="fade-out-effect">
+
+        </div>
+    </nav>
+    <!-- navigation menu end -->
+    <!-- home section start -->
+    <section class="home-section section active" id="home">
+        <!-- effect wrap start -->
+        <div class="effect-wrap">
+            <div class="effect effect-l" >
+
+            </div>
+            <div class="effect effect-2" >
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="effect effect-3">
+
+            </div>
+            <div class="effect effect-4"></div>
+            <div class="effect effect-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+        </div>
+        <!-- effect wrap end -->
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="home-text">
+                    <p>Hello</p>
+                    <h2>I'm Assalam</h2>
+                    <h1>Web Designer & Developer</h1>
+                    <a href="#about" class="link-item btn-l outer-shadow hover-in-shadow">More About Me</a>
+                </div>
+                <div class="home-img">
+                    <div class="img-box inner-shadow">
+                        <img src="img/WhatsApp Image 2021-10-20 at 09.30.57.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- contact section end -->
-
-    <!-- footer -->
-    <footer>
-        <div class="box">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-github-square"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
+    <!-- home section end -->
+    <!-- about section start -->
+        <section class="about-section section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="main info">About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-img">
+                        <div class="img-box inner-shadow">
+                            <img class="inner-shadow" src="img/WhatsApp Image 2021-10-20 at 09.30.57.jpeg" alt="">
+                        </div>
+                            <!-- Social link start -->
+        <div class="social-links">
+            <a href="" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook"></i></a>
+            <a href="" class="outer-shadow hover-in-shadow"><i class="fab fa-twitter"></i></a>
+            <a href="" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
         </div>
+    <!-- Social link end -->
+                    </div>
+                    <div class="about-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse, adipisci a assumenda aut, officia cumque consequatur nam voluptatibus, reprehenderit mollitia praesentium maiores odit nesciunt rerum similique fugit eum possimus.</p>
+                        <a href="#" class="btn-l outer-shadow hover-in-shadow">Download CV</a>
+                        <a href="#contact" class="btn-l outer-shadow hover-in-shadow link-item">Hire Me</a>
+                    </div>
+                </div>
+                <!-- about tab start -->
+                <div class="row">
+                    <div class="about-tabs">
+                        <span class="tab-item outer-shadow active" data-target=".skills">
+                            Skills
+                        </span>
+                        <span class="tab-item" data-target=".experience">
+                            Experience
+                        </span>
+                        <span class="tab-item" data-target=".education">
+                            Education
+                        </span>
+                    </div>
+                </div>
+                <!-- about tab end -->
+                <!-- skills start -->
+                <div class="row">
+                    <div class="skills tab-content active">
+                        <div class="row">
+                            <!-- skill item start -->
+                            <div class="skill-item">
+                                <p>HTML</p>
+                                <div class="progress outer-shadow">
+                                    <div class="progress-bar" style="width: calc(50% - 14px)">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>Javascript</p>
+                                <div class="progress outer-shadow">
+                                    <div class="progress-bar" style="width: calc(60% - 14px)">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>Bootstrap</p>
+                                <div class="progress outer-shadow">
+                                    <div class="progress-bar" style="width: calc(70% - 14px)">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>jQuery</p>
+                                <div class="progress outer-shadow">
+                                    <div class="progress-bar" style="width: calc(80% - 14px)">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>Angular</p>
+                                <div class="progress outer-shadow">
+                                    <div class="progress-bar" style="width: calc(90% - 14px)">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>PHP</p>
+                                <div class="progress outer-shadow">
+                                    <div class="progress-bar" style="width: calc(100% - 14px)">
+                                        <span>100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skill item end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- skills end -->
+                <!-- experience start -->
+                <div class="row">
+                    <div class="experience tab-content">
+                        <div class="row">
+                            <div class="timeline">
+                                <div class="row">
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>
+                                                Nov, 2021 - present
+                                            </span>
+                                            <h3>Full Stack Developer</h3>
+                                            <h4>
+                                                Company name
+                                            </h4>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur, fuga temporibus amet officia reiciendis. Repellat quisquam, nemo consequuntur rerum nisi aperiam q
+                                            </p>
+                                        </div>
+                                    </div>
+                                       
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>
+                                            March, 2021 - Aug 2021
+                                            </span>
+                                            <h3>Web Designer</h3>
+                                            <h4>
+                                                Company name
+                                            </h4>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur, fuga temporibus amet officia reiciendis. Repellat quisquam, nemo consequuntur rerum nisi aperiam q
+                                            </p>
+                                        </div>
+                                    </div>
+                                       
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>
+                                                Jan, 2020 - Oct, 2020
+                                            </span>
+                                            <h3>Img Designer</h3>
+                                            <h4>
+                                                Company name
+                                            </h4>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur, fuga temporibus amet officia reiciendis. Repellat quisquam, nemo consequuntur rerum nisi aperiam q
+                                            </p>
+                                        </div>
+                                    </div>
+                                      
+                                    <!-- timeline item end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- experience end -->
+                <!-- education start -->
+                <div class="row">
+                    <div class="education tab-content">
+                        <div class="row">
+                            <div class="timeline">
+                                <div class="row">
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-graduation-cap icon"></i>
+                                            <span>
+                                                Nov, 2021 - present
+                                            </span>
+                                            <h3>Full Stack Developer</h3>
+                                            <h4>
+                                                Company name
+                                            </h4>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur, fuga temporibus amet officia reiciendis. Repellat quisquam, nemo consequuntur rerum nisi aperiam q
+                                            </p>
+                                        </div>
+                                    </div>
+                                       
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-graduation-cap icon"></i>
+                                            <span>
+                                            March, 2021 - Aug 2021
+                                            </span>
+                                            <h3>Web Designer</h3>
+                                            <h4>
+                                                Company name
+                                            </h4>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur, fuga temporibus amet officia reiciendis. Repellat quisquam, nemo consequuntur rerum nisi aperiam q
+                                            </p>
+                                        </div>
+                                    </div>
+                                       
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-graduation-cap icon"></i>
+                                            <span>
+                                                Jan, 2020 - Oct, 2020
+                                            </span>
+                                            <h3>Img Designer</h3>
+                                            <h4>
+                                                Company name
+                                            </h4>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aspernatur, fuga temporibus amet officia reiciendis. Repellat quisquam, nemo consequuntur rerum nisi aperiam q
+                                            </p>
+                                        </div>
+                                    </div>
+                                      
+                                    <!-- timeline item end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- education end -->
+            </div>
+        </section>
+    <!-- about section end -->
+    <!-- service section start -->
+        <section class="service-section section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="Services">What i do</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- service item start -->
+                    <div class="service-item">
 
-    </footer>
+                 
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur possimus neque obcaecati </p>
+                    </div>
+                </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
 
-    <!-- end footer -->
-    <div id="menu">
-        <i class="fas fa-bars"></i>
-    </div>
+                 
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur possimus neque obcaecati </p>
+                    </div>
+                </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
 
+                 
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur possimus neque obcaecati </p>
+                    </div>
+                </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
 
-    <!-- jquery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- my js -->
-    <script src="js/script.js"></script>
-    <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwvqNHOStJzCYjzCnZ1BKQVCQ5lcKfvKhU6mqrqq0z1HIPbLXBudtG0dUZaZoV_xBbMzA/exec';
-  const form = document.forms['contact-form'];
-  const btnKirim = document.querySelector('.btn-kirim');
-  const btnLoading = document.querySelector('.loading');
-  const alert = document.querySelector('.alert');
+                 
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur possimus neque obcaecati </p>
+                    </div>
+                </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    btnLoading.classList.toggle('d-none');
-    btnKirim.classList.toggle('d-none');
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => { 
-    // Ketika tombol submit diklik
-    // tampilkan tombol loading, hilangkan  tombol kirim
-    btnLoading.classList.toggle('d-none');
-    btnKirim.classList.toggle('d-none');
-    //tampilkan alert
-    alert.classList.toggle('d-none');
-    // reset form
+                 
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur possimus neque obcaecati </p>
+                    </div>
+                </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
 
-    form.reset();
-    console.log('Success!', response)})
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+                 
+                    <div class="service-item-inner outer-shadow">
+                        <div class="icon inner-shadow">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur possimus neque obcaecati </p>
+                       
+                    </div>
+                </div>
+                    <!-- service item end -->
+                   
+                  
+                </div>
+            </div>
+        </section>
+    <!-- service section end -->
+    <!-- portfolio section start -->
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="Portfolio">Latest Works</h2>
+                </div>
+            </div>
+            
+                <!-- portfolio items start -->
+                <div class="row portfolio-items">
+                    <!-- portfolio item start -->
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-inner outer-shadow">
+                                <div class="portfolio-item-img">
+                                    <img src="img/portfolio/portfolio1.PNG" alt="portfolio" data-screenshots="">
+                                </div>
+                                <p class="portfolio-item-title">Personal Web</p>
+                            </div>
+                        </div>
+                    <!-- portfolio item end -->
+                    <!-- portfolio item start -->
+                    <a target="_blank" href="http://assalamweb.github.io">     
+                    <div class="portfolio-item">
+                          <div class="portfolio-item-inner outer-shadow">
+                                <div class="portfolio-item-img">
+                                    <img src="img/portfolio/portfolio1.PNG" alt="portfolio" data-screenshots="">
+                                </div>
+                                <p class="portfolio-item-title">Personal Web</p>
+                            </div>
+                        </a>
+                        </div>
+                    <!-- portfolio item end -->
+                    <!-- portfolio item start -->
+                        <div class="portfolio-item">
+                            <div class="portfolio-item-inner outer-shadow">
+                                <div class="portfolio-item-img">
+                                    <img src="img/portfolio/portfolio1.PNG" alt="portfolio"  data-screenshots="">
+                                </div>
+                                <p class="portfolio-item-title">Personal Web</p>
+                            </div>
+                        </div>
+                    <!-- portfolio item end -->
+                </div>
+                <!-- portfolio item end -->
+            
+               
+        </div>
+    </section>
+    <!-- portfolio section end -->
+    <!-- Contact sectiom start -->
+        <section class="contact-section section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="contact">Get In Touch</h2>
+                        <div class="row">
+                            <!-- contact item start -->
+                            <div class="contact-item">
+                                <div class="contact-item-inner outer-shadow">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Phone</span>
+                                    <p>081547839236</p>
+                                </div>
+                            </div>
+                            <!-- contact item end -->
+                            <!-- contact item start -->
+                            <div class="contact-item">
+                                <div class="contact-item-inner outer-shadow">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                    <p>assalam21@gmail.com </p>
+                                </div>
+                            </div>
+                            <!-- contact item end -->
+                            <!-- contact item start -->
+                            <div class="contact-item">
+                                <div class="contact-item-inner outer-shadow">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Address</span>
+                                    <p>Jl. Karangpucung - Majenang</p>
+                                </div>
+                            </div>
+                            <!-- contact item end -->
+                            <div class="row">
+                                <div class="contact-form">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="w-50">
+                                                <div class="input-group outer-shadow hover-in-shadow">
+                                                    <input type="text" placeholder="Nama" class="input-control">
+                                                </div>
+                                                <div class="input-group outer-shadow hover-in-shadow">
+                                                    <input type="text" placeholder="Email" class="input-control">
+                                                </div>
+                                                <div class="input-group outer-shadow hover-in-shadow">
+                                                    <input type="text" placeholder="Subject" class="input-control">
+                                                </div>
+                                            </div>
+                                            <div class="w-50">
+                                                <div class="input-group outer-shadow hover-in-shadow">
+                                                    <textarea class="input-control" placeholder="Pesan" name="" id="" ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="submit-btn">
+                                                <button type="submmit" class="btn-l outer-shadow hover-in-shadow">Kirim Pesan</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Contact section end -->
+    <!-- style switcher start -->
+        <div class="style-switcher outer-shadow">
+            <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon outer-shadow hover-in-shadow">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActivateStyle('color-1')">
+                </span>
+                <span class="color-2" onclick="setActivateStyle('color-2')">
+                </span>
+                <span class="color-3" onclick="setActivateStyle('color-3')">
+                </span>
+                <span class="color-4" onclick="setActivateStyle('color-4')">
+                </span>
+                <span class="color-5" onclick="setActivateStyle('color-5')">
+                </span>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- style switcher  -->
+        <!-- main.js -->
+        <script src="js/script.js"></script>
+        <!-- style switcher js -->
+        <script src="js/style-switcher.js"></script>
+</body>
 </html>
